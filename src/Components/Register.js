@@ -95,7 +95,7 @@ class Register extends React.Component {
         </div>
         <div className="signup-image">
           <figure>
-            <img src={RegisterImg} />
+            <img src={RegisterImg} alt="backgroung" />
           </figure>
           <Link to="/login" className="signup-image-link">
             I am already a member

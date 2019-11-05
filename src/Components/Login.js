@@ -87,7 +87,7 @@ class Login extends React.Component {
       <div className="registerContainer signin-content">
         <div className="signin-image">
           <figure>
-            <img src={LoginImg} />
+            <img src={LoginImg} alt="background" />
           </figure>
           <Link to="/register" className="signup-image-link">
             Create an account
@@ -105,7 +105,7 @@ class Login extends React.Component {
             <ul className="socials">
               <li>
                 <a href="#">
-                  <i className="large google icon"></i>
+                  <i className="large google icon" />
                 </a>
               </li>
             </ul>
