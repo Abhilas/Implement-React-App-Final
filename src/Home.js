@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 
 class Home extends React.Component {
   render() {
-    return <>Hello From Home !!! {this.props.counter}</>;
+    return <>Hello {this.props.user} !!!</>;
   }
 }
 
 const mapStateToProps = state => {
   return {
-    counter: state.Register.counter
+    user: state.User.currentUser
   };
 };
 
