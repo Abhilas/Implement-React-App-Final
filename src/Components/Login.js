@@ -87,7 +87,7 @@ class Login extends React.Component {
       <div className="registerContainer signin-content">
         <div className="signin-image">
           <figure>
-            <img src={LoginImg} alt="background" />
+            <img src={LoginImg} />
           </figure>
           <Link to="/register" className="signup-image-link">
             Create an account
@@ -105,7 +105,7 @@ class Login extends React.Component {
             <ul className="socials">
               <li>
                 <a href="#">
-                  <i className="large google icon" />
+                  <i className="large google icon"></i>
                 </a>
               </li>
             </ul>
@@ -116,7 +116,13 @@ class Login extends React.Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    user: state.User.currentUser
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { loginUser }
 )(ValidateForm(Login, LoginFormValidation));
